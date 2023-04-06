@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>七禾叶网络</title>
+    <link rel="Shortcut icon" href="images/favicon.ico" />
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <script src="js/slick.js"></script>
+
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.carousel-1.1.min.js"></script>
+    <script type="text/javascript" src="js/carousel.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!--网页常用效果 end-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--网页样式-->
+    <script type="text/javascript">
+        //Rem
+        (function(win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+
+            function setFont() {
+                var cliWidth = html.clientWidth;
+                if (cliWidth > 1600) {
+                    cliWidth = 1600;
+                }
+                html.style.fontSize = 100 * (cliWidth / 1600) + 'px';
+            }
+
+            win.addEventListener('resize', setFont, false)
+            doc.addEventListener('DOMContentLoaded', setFont, false)
+        })(window, document);
+    </script>
+</head>
+
+<body>
+
+    <!-- menu -->
+    <div class="Menu">
+        <div class="Wrapper">
+            <div class="logo">
+                <img src="images/menu_logo.png" alt="">
+            </div>
+            <ul>
+                <li>
+                    <a href="#a1">小程序搭建</a>
+                </li>
+                <li>
+                    <a href="#a2">网站搭建</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="BanCon" id="a1">
+        <div class="Wrapper">
+            <div class="TextPart">
+                <div class="logo"><img src="images/logo.png" alt=""></div>
+                <h2 class="Title">小程序搭建</h2>
+                <div class="txtbox">
+                    <dl class="wxlogo">
+                        <dt>
+                            <img src="images/qywx.png" alt="">
+                        </dt>
+                        <dd>企业微信</dd>
+                    </dl>
+                    <div class="txtdiv">
+                        <p>原生设计开发</p>
+                        <p>为您打造专业平台</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ImgPart">
+                <!-- carousel -->
+                <div class="carousel  wow animated zoomIn">
+                    <div class="carousel-m">
+                        <div class="slides">
+
+                            <div class="slideItem">
+                                <a data-trigger="gallery" href="images/sj1.png" class="maskbox fancybox" data-fancybox="gallery">
+                                    <img src="images/sj1.png" />
+                                </a>
+                            </div>
+                            <div class="slideItem">
+                                <a data-trigger="gallery" href="images/sj3.png" class="maskbox fancybox" data-fancybox="gallery">
+                                    <img src="images/sj1.png" />
+                                </a>
+                            </div>
+                            <div class="slideItem">
+                                <a data-trigger="gallery" href="images/sj4.png" class="maskbox fancybox" data-fancybox="gallery">
+                                    <img src="images/sj1.png" />
+                                </a>
+                            </div>
+                            <div class="slideItem">
+                                <a data-trigger="gallery" href="images/sj5.png" class="maskbox fancybox" data-fancybox="gallery">
+                                    <img src="images/sj1.png" />
+                                </a>
+                            </div>
+                            <div class="slideItem">
+                                <a data-trigger="gallery" href="images/sj6.png" class="maskbox fancybox" data-fancybox="gallery">
+                                    <img src="images/sj1.png" />
+                                </a>
+                            </div>
+                            <div class="slideItem">
+                                <a data-trigger="gallery" href="images/sj7.png" class="maskbox fancybox" data-fancybox="gallery">
+                                    <img src="images/sj1.png" />
+                                </a>
+                            </div>
+                            <div class="slideItem">
+                                <a data-trigger="gallery" href="images/sj8.png" class="maskbox fancybox" data-fancybox="gallery">
+                                    <img src="images/sj1.png" />
+                                </a>
+                            </div>
+                            <div class="slideItem">
+                                <a data-trigger="gallery" href="images/sj9.png" class="maskbox fancybox" data-fancybox="gallery">
+                                    <img src="images/sj1.png" />
+                                </a>
+                            </div>
+                            <div class="slideItem">
+                                <a data-trigger="gallery" href="images/sj10.png" class="maskbox fancybox" data-fancybox="gallery">
+                                    <img src="images/sj1.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $(function($) {
+                        $(window).on("resize", function(e) {
+                            var a = $(".carousel").outerWidth() * 1
+                            console.log(a)
+                            var b = a * 0.8
+
+                            $('.ImgPart .carousel-m').carousel({
+                                carouselWidth: a - 200,
+                                carouselHeight: b,
+                                frontWidth: a * 0.4,
+                                frontHeight: b,
+                                directionNav: true
+                            });
+
+                        }).trigger("resize");
+                    });
+                </script>
+                <!-- end carousel -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 主体内容 -->
+    <div class="HomeCon" id="a2">
+        <div class="Wrapper">
+            <div class="Stitle">
+                <h2 class="tit">七禾网站搭建</h2>
+                <div class="slogen">快速打造您的专属网站</div>
+            </div>
+            <div class="Homeslick">
+                <ul class="slider">
+                    <li class="item">
+                        <a data-trigger="gallery" href="images/1.png" class="maskbox fancybox" data-fancybox="gallery">
+                            <div class="imgbox"><span style="background-image:url(images/1.png);"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a data-trigger="gallery" href="images/2.png" class="maskbox fancybox" data-fancybox="gallery">
+                            <div class="imgbox"><span style="background-image:url(images/2.png);"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a data-trigger="gallery" href="images/3.png" class="maskbox fancybox" data-fancybox="gallery">
+                            <div class="imgbox"><span style="background-image:url(images/3.png);"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a data-trigger="gallery" href="images/4.png" class="maskbox fancybox" data-fancybox="gallery">
+                            <div class="imgbox"><span style="background-image:url(images/4.png);"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a data-trigger="gallery" href="images/5.png" class="maskbox fancybox" data-fancybox="gallery">
+                            <div class="imgbox"><span style="background-image:url(images/5.png);"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a data-trigger="gallery" href="images/6.png" class="maskbox fancybox" data-fancybox="gallery">
+                            <div class="imgbox"><span style="background-image:url(images/6.png);"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a data-trigger="gallery" href="images/7.png" class="maskbox fancybox" data-fancybox="gallery">
+                            <div class="imgbox"><span style="background-image:url(images/7.png);"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a data-trigger="gallery" href="images/8.png" class="maskbox fancybox" data-fancybox="gallery">
+                            <div class="imgbox"><span style="background-image:url(images/8.png);"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a data-trigger="gallery" href="images/9.png" class="maskbox fancybox" data-fancybox="gallery">
+                            <div class="imgbox"><span style="background-image:url(images/9.png);"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a data-trigger="gallery" href="images/10.png" class="maskbox fancybox" data-fancybox="gallery">
+                            <div class="imgbox"><span style="background-image:url(images/10.png);"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a data-trigger="gallery" href="images/11.png" class="maskbox fancybox" data-fancybox="gallery">
+                            <div class="imgbox"><span style="background-image:url(images/11.png);"></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btns">
+                <a href="http://www.zhuying.vip/web" target="_blank" href="">点击体验</a>
+                <a href="http://www.zhuying.vip/admin" target="_blank">管理平台</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="Wrapper">
+            <div class="flink">
+                <span>友情链接 <img src="images/link.svg" alt=""></span>
+                <a href="">链接一</a>
+                <a href="">链接二</a>
+                <a href="">链接三</a>
+                <a href="">链接四</a>
+            </div>
+            <div class="foot">
+                © 2023 <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener noreferrer">皖ICP备2023005140号-1</a>
+            </div>
+        </div>
+    </div>
+
+
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <script src="js/jquery.fancybox.js"></script>
+
+    <script>
+        // $(window).scroll(function() {
+        //     if ($(window).scrollTop() >= 80) {
+        //         $(".Menu").addClass("fix");
+        //     } else {
+        //         $(".Menu").removeClass("fix");
+        //     }
+        // });
+
+
+
+        $('.Homeslick .slider').slick({
+            dots: false,
+            pauseOnHover: false,
+            fade: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 1000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+
+        });
+
+        $('[data-fancybox="gallery"]').fancybox({});
+    </script>
+</body>
+
+</html>
