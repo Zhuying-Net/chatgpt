@@ -1,5 +1,7 @@
 #此代码仅供参考，请勿拉取！！！！获取源码请看演示地址
 
+GPT4APIkey1元1刀：https://openai.qiheweb.com
+
 后台演示地址(http://www.zhuying.vip/admin/#/login)
 
 
